@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements Using document.forms</h2>
+
+<form action="" name ='form name' onsubmit="return can()">
+First 4name: <input type="text" name="fname" >
+
+<input type="submit" value="Submit">
+</form> 
+
+<p id="demo"></p>
+
+<script>
+document.getElementById ("demo").innerHTML =
+"Number of forms: " + document.forms.length;
+    function can(){
+        let x = document.forms['form name']['fname'].value
+        if(x== ''){
+            alert('fill out this form');
+            return false;
+        }
+
+    }
+</script>
+
+</body>
+</html>
