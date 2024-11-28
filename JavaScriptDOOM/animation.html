@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="animate.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+
+<body>
+    <button onclick="move()">Move me</button><br>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    <script>
+        function move(){
+            let id = '';
+            const elem=document.getElementById('animate');
+            let movement = 0;
+            clearInterval(id);
+            id = setInterval(frame,5 );
+            function frame(){
+                if (movement == 350){
+                    clearInterval(id);
+                } else {
+                    movement ++;
+                    elem.style.top= movement + 'px'
+                    elem.style.left= movement + 'px'
+                }
+            }            
+
+
+        }
+    </script>
+</body>
+</html>
