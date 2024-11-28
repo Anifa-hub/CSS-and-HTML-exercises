@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php" id="form1">
+        <h1>Enterance</h1>
+        first Name: <input type="text" name="first Name"> <br></br>
+        last Name: <input type="text" name="last Name"> <br></br>
+        <p id="sub">once you put your name submit by click on the below button</p>
+        <input type="submit" value="submit">
+    </form>
+        <p how to call the parts of the form></p>
+        <p id="demo"></p>
+        <script>
+            const x = document.forms['form1'];
+            let text='';
+            for( let i =0; i<x.length; i++ ){
+                text+= x.elements[i].name + '<br>';
+            }
+            document.getElementById("demo").innerHTML = text;
+
+        </script>
+    
+
+    
+</body>
+</html>
+
