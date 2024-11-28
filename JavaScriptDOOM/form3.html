@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="identify" onsubmit="return done()">
+        Id number: <input type="number" name="Inumber" >
+        <button type="submit">submit</button>
+    </form>
+    <p id="demo"></p>
+    <script>
+        document.getElementById ("demo").innerHTML =
+        "Number of forms: " + document.forms.length;
+            function done(){
+            let x = document.forms["identify"]["Inumber"].value
+            if(x == ''){
+                alert('wait');
+                return false;
+
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
+<!--this about the form of output-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return okay()">
+        <input  id="input">
+        <button type="button" onclick="okay()">submit</button>
+        <p id="demo"></p>
+    </form>
+    <script>
+        function okay(){
+            let x = document.getElementById('input').value
+            let text;
+            if(isNaN(x)){
+               text='non'
+            }
+            document.getElementById('demo').innerHTML = text
+        }
+    </script>
+</body>
+</html>
