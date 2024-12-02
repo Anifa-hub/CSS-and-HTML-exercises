@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise4</title>
+</head>
+<body>
+    <div id="ok" >
+        <h1>shows</h1>
+        <p>everything</p>
+        <h2>that's okay!</h2>
+    </div>
+    <button onclick="that()" ondblclick="say()">show/hide</button>
+    <script>
+        function that(){
+            let x = document.getElementById('ok')
+            x.style.visibility='hidden'
+        }
+        function say(){
+            let y = document.getElementById('ok')
+            y.style.visibility='visible'
+        }
+        
+    </script>
+</body>
+</html>
