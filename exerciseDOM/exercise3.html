@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise3</title>
+</head>
+<body>
+    <h1>Add new list</h1>
+    <button onclick="adding()">click me</button>
+    <ul id="parent">
+        <li>Anifa</li>
+        <li>Gedion</li>
+    </ul>
+    <script>
+        function adding(){
+            let can = document.createElement("li") 
+            can.textContent = 'Fuad'
+            let dan = document.getElementById('parent')
+            dan.appendChild(can)
+
+        }
+    </script>
+    
+</body>
+</html>
