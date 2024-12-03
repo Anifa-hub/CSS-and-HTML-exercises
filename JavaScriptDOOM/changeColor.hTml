@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+</head>
+<body>
+    <p id="p">change this by it's Color</p>
+    <button id="button">click me</button>
+    <script>
+        let array =["red","blue","black","yellow"];
+        let paragraph = document.getElementById('p')
+        let button = document.getElementById('button')
+        let arr2 = 0;
+        button.addEventListener('click', () =>{
+            paragraph.style.color= array[arr2];
+            arr2=(arr2+ 17)%array.length
+            setInterval(button,3)
+
+        })
+    </script>
+    
+</body>
+</html>
