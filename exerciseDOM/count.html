@@ -1,20 +1,46 @@
- 
- <html>
+
+<html>
     <head>
         <title>counting</title>
     </head>
+    <style>
+        .change{
+          visibility: hidden;
+        }
+        .font{
+            font-size:larger;
+        }
+      </style>
     <body>
-        <button id="butto">click me</button>
-        <p id="demo">0 <span> Times</span></p>
+        <p id="demo">hello Time</p>
+        <button id="butto">toggle me</button>
+        <button id="sec">font</button>
         <script>
-            const butto = document.getElementById('butto')
+            const hideText = document.getElementById("butto")
             const paragraph = document.getElementById('demo')
-            let count =0
-        butto.onclick = function () {
-            count++;
-        paragraph.innerHTML = count +" " +"Times";
-            }
-            console.log(butto)
+            const butto2 = document.getElementById("sec")
+
+            hideText.addEventListener('click', function(){
+                paragraph.classList.toggle('change')
+            })
+
+        //         hideText.addEventListener('click', function check (){
+    
+        //     if(paragraph.style.display==='none'){
+        //         paragraph.style.display='block'
+        //     }else {
+        //         paragraph.style.display='none'
+        //     }
+        // })
+       
+    //    butto2.ondblclick = function(){
+    //     paragraph.style.fontSize ='45px'
+    //    }
+    butto2.addEventListener("dblclick",function(){
+        paragraph.classList.toggle('font')
+    })
+      
+       
         </script>
     </body>
 </html> 
