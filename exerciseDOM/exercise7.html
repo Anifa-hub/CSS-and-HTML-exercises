@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise3</title>
 </head>
+
 <body>
   <form action="submit" id="myForm">
-    <input type="text" id="yes">
+    <label for="yes">username</label><input type="text" id="yes">
+    <label for="password">password</label><input type="password"id='password'>
     <button type="submit" id="submit">submit</button>
   </form>
   <p id="pa"></p>
@@ -15,11 +18,12 @@
         const form =document.getElementById('myForm')
         const paragraph = document.getElementById('pa')
         const input = document.getElementById('yes')
-        form.addEventListener('submit',function(nimwebue){
-                nimwebue.preventDefault();
-               paragraph.innerText=input.value
-
+        const password= document.getElementById('password')
+        form.addEventListener('submit',function(){
+          alert (input.value + password.value)
+          
         })
+        
     </script>
 </body>
 </html>
