@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change</title>
+</head>
+<style>
+    .change{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <p id="p">change me </p>
+    <button id="button">click</button>
+</body>
+<script>
+       const anni = document.getElementById('body')
+                // anni.style.backgroundColor ='yellow'
+            const button = document.getElementById('button') 
+            const paragraph =document.getElementById('p')
+            button.addEventListener('click',function(){
+            //     if(anni.style.backgroundColor ==='yellow'){
+            //         anni.style.backgroundColor ='black' 
+            //     }else{
+            //         anni.style.backgroundColor ='yellow'
+            //     }
+            // }
+            paragraph.classList.toggle("change")
+        })
+
+        </script>
+</html> 
