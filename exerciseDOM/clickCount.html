@@ -1,0 +1,22 @@
+ 
+  <html>
+    <head>
+        <title>counting</title>
+    </head>
+    <body>
+        <button id="butto">click me</button>
+        <p id="demo">0 <span> Times</span></p>
+        <script>
+            const butto = document.getElementById('butto')
+            const paragraph = document.getElementById('demo')
+            let count =0
+        butto.onclick = function () {
+            count++;
+        paragraph.innerHTML = count +" " +"Times";
+            }
+            console.log(butto)
+        </script>
+    </body>
+</html>   
+
+
