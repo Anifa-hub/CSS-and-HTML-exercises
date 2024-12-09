@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM practice</title>
+</head>
+<style>
+    /* .change{
+        font: bold;
+        font-size: 54px;
+        color: aqua;
+    } */
+</style>
+<body>
+    <h1>1.Chaning font,fontsize and color of the text when you click button</h1>
+    <p id="p">everything is going to be alright just do your best and sleep</p>
+    <button id="input1">change1</button>
+
+    
+
+
+    <script>
+// first exercise
+        const paragraph = document.getElementById('p')
+        const button = document.getElementById('input1')
+        button.addEventListener('click', function(){
+            paragraph.style.color =('yellow')
+            paragraph.style.font =('bold')
+            paragraph.style.fontSize =('54px')
+        })
+
+        
+    </script>
+</body>
+</html>
