@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM practice</title>
+</head>
+
+<body>
+    
+    <h1>3.Add item on list by using button</h1> 
+<ul id="list">
+    <li>manngo</li>
+    <li>potato</li>
+    <li>embe</li>
+</ul>
+<button id="input3">change3</button>
+
+    
+
+
+    <script>
+
+        //  third exercise
+        const button3 = document.getElementById('input3')
+        const list = document.getElementById('list')
+        
+        button3.addEventListener('click', function(){
+            const element = document.createElement('li')
+            element.textContent = 'sugar'
+            list.appendChild(element)
+        })
+    </script>
+</body>
+</html>
