@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM practice</title>
+</head>
+
+<body>
+    
+    <h1>4.Input radius value to get sphere volume.</h1>
+<form id="MyForm">
+    <label for="radius">Radius</label><input id="radius" type="number"><br><br>
+    <label for="volume">volume</label><input id="volume" type="number" value="0.0000"><br><br>
+
+    <button id="input4" type="submit" >calculate</button>
+</form>
+  
+
+
+    <script>
+// fourth exercise
+        const radius = document.getElementById('radius')
+        const volume = document.getElementById('volume')
+        const button = document.getElementById('input4')
+        button.addEventListener('click',function(){
+           let  formular =  (4/3)*(3.14*radius.value*radius.value*radius.value)  
+           volume.value = formular
+          
+            })
+
+       
+    </script>
+</body>
+</html>
